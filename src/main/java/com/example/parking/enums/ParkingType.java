@@ -5,16 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 
-@Getter
 @AllArgsConstructor
+@Getter
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
-
-public enum TypeOfParkingSpace {
-    STANDART("Стандартный"),
-    THEDISABLED("Для инвалидов"),
-    FAMILIESWITHCHILDREN("для семей с детьми"),
-    ELECTRICVECHICLES("Электромобили");
+public enum ParkingType {
+    STANDARD("Стандартный"),
+    FOR_DISABLED("Для инвалидов"),
+    FAMILIES("Для семей с детьми"),
+    ELECTRIC_CARS("Для электромобилей");
 
     String DESCRIPTION;
-
 }

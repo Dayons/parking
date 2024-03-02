@@ -5,12 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 
-@Getter
 @AllArgsConstructor
+@Getter
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public enum Status {
-    EMPTY("Свободно"),
-    BUSY("Зянато");
+    AVAILABLE("Свободно"),
+    RESERVED("Занято");
 
     String DESCRIPTION;
 }
